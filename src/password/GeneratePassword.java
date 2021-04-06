@@ -1,4 +1,4 @@
-package generator;
+package password;
 
 import java.util.Random;
 
@@ -13,6 +13,13 @@ public class GeneratePassword {
 
     private static Random randomNumber = new Random();
 
+    /**
+     * Generates a password with random amount of special case and upper case characters.
+     * @param length Length of the password that will be created
+     * @param specialCharacters Will produce random amount of special characters
+     * @param upperCase Will produce random amount of upper case characters
+     * @return Returns the finished password
+     */
     public static String generatePassword(int length, boolean specialCharacters, boolean upperCase){
         StringBuilder password = new StringBuilder();
         int character;
@@ -31,6 +38,13 @@ public class GeneratePassword {
         return password.toString();
     }
 
+    /**
+     * Generates a password based on length given.
+     * @param length Length of the password to be made
+     * @param specialCharacterAmount The amount of special characters to use
+     * @param upperCaseAmount The amount of upper case characters to use
+     * @return Returns the completed password
+     */
     public static String generatePassword(int length, int specialCharacterAmount, int upperCaseAmount){
         StringBuilder password = new StringBuilder();
         int character;
