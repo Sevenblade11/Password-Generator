@@ -1,2 +1,2 @@
 # Password-Generator
-Generator and Password keeper
+Simple password generator.
